@@ -1,8 +1,9 @@
-# spring-cloud-config-eureka
+# spring-cloud-config-eureka-bus
 
 ## Background:
-It is to register the config-server to Eureka, so that client can acquire service from Eureka.
-When change the properties, you don't need to restart config-server and config-client. 
+Two features:
+1. It is to register the config-server to Eureka, so that client can acquire service from Eureka.</br>
+2. When change the properties, you don't need to restart config-server and config-client. 
 
 ## Steps:
 Start up Eureka, config-server 2 instances- the seond one with port 8003, config-client
