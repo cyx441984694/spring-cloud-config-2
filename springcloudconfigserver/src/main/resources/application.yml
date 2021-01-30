@@ -4,6 +4,9 @@ spring:
   application:
     name: spring-cloud-config-server
   cloud:
+    bus:
+      trace:
+        enabled: true
     config:
       server:
         git:
@@ -11,7 +14,19 @@ spring:
           search-paths: config-repo
           username:
           password:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8760/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh,httptrace
