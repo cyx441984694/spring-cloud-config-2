@@ -1,4 +1,4 @@
-# spring-cloud-config-bus
+# spring-cloud-config-2
 
 ## Background:
 When server changed anything, the client may need to modify the configuration. It is to register the config-server to Eureka, so that client can acquire service from Eureka. 
